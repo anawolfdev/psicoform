@@ -1,11 +1,9 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import HandleForm from "./form-patient";
 
-class App extends React.Component {
-  render() {
-    return <div className="App">:D</div>;
-  }
+function App() {
+  return <HandleForm></HandleForm>;
 }
 
 export default App;
