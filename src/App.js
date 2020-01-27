@@ -3,7 +3,11 @@ import "./App.css";
 import HandleForm from "./form-patient";
 
 function App() {
-  return <HandleForm></HandleForm>;
+  return (
+    <>
+      <HandleForm></HandleForm>
+    </>
+  );
 }
 
 export default App;

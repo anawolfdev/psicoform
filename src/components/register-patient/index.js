@@ -8,12 +8,13 @@ export default function RegisterPatient({
   surname = "Apellidos ",
   phone = "Teléfono ",
   email = "Email ",
-  problem = "Descripción del problema: "
+  problem = "Descripción del problema: ",
+  values = {}
 }) {
   return (
     <>
-      <Title title={"Registro de Pacientes"}></Title>
       <form onSubmit={onSubmit}>
+        <Title></Title>
         <label htmlFor="name">
           {name}
           <input type="text" name="name" id="name"></input>
@@ -40,6 +41,14 @@ export default function RegisterPatient({
         </label>
 
         <input type="submit"></input>
+
+        <ul>
+          <li>{values.name}</li>
+          <li>{values.surname}</li>
+          <li>{values.phone}</li>
+          <li>{values.email}</li>
+          <li>{values.problem}</li>
+        </ul>
       </form>
     </>
   );
