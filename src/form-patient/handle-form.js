@@ -3,6 +3,7 @@ import RegisterPatient from "../components/register-patient";
 
 export default function HandleForm(props) {
   const [data, setData] = useState({});
+
   const registerData = e => {
     e.stopPropagation();
     e.preventDefault();
