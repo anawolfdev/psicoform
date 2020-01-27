@@ -1,3 +1,27 @@
 .App {
   text-align: center;
 }
+
+form {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  width: 70%;
+}
+
+input {
+  display: block;
+  width: 50%;
+  margin-left: 1%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding: 4px 8px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
