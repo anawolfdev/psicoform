@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../title";
-import HandleForm from "../../form-patient";
+import HandleForm from "../form-patient";
 
 export default function RegisterPatient({
   onSubmit = HandleForm,
@@ -8,8 +8,8 @@ export default function RegisterPatient({
   surname = "Apellidos ",
   phone = "Teléfono ",
   email = "Email ",
-  problem = "Descripción del problema: ",
-  values = {}
+  problem = "Descripción del problema: "
+  //values = {}
 }) {
   return (
     <>
@@ -41,14 +41,6 @@ export default function RegisterPatient({
         </label>
 
         <input type="submit"></input>
-
-        <ul>
-          <li>{values.name}</li>
-          <li>{values.surname}</li>
-          <li>{values.phone}</li>
-          <li>{values.email}</li>
-          <li>{values.problem}</li>
-        </ul>
       </form>
     </>
   );

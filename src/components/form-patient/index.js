@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import RegisterPatient from "../components/register-patient";
+import RegisterPatient from "../register-patient";
+import Results from "../results";
 
 export default function HandleForm(props) {
   const [data, setData] = useState({});
@@ -26,7 +27,8 @@ export default function HandleForm(props) {
 
   return (
     <>
-      <RegisterPatient onSubmit={registerData} values={data}></RegisterPatient>
+      <RegisterPatient onSubmit={registerData}></RegisterPatient>
+      <Results values={data}></Results>
     </>
   );
 }
