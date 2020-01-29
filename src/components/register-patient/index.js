@@ -9,7 +9,6 @@ export default function RegisterPatient({
   phone = "Teléfono ",
   email = "Email ",
   problem = "Descripción del problema: "
-  //values = {}
 }) {
   return (
     <>
@@ -17,17 +16,17 @@ export default function RegisterPatient({
         <Title></Title>
         <label htmlFor="name">
           {name}
-          <input type="text" name="name" id="name" required></input>
+          <input type="text" name="name" id="name"></input>
         </label>
 
         <label htmlFor="surname">
           {surname}
-          <input type="text" surname="surname" id="surname" required></input>
+          <input type="text" surname="surname" id="surname"></input>
         </label>
 
         <label htmlFor="phone">
           {phone}
-          <input type="text" id="phone" required></input>
+          <input type="text" id="phone"></input>
         </label>
 
         <label htmlFor="email">
@@ -37,7 +36,7 @@ export default function RegisterPatient({
 
         <label htmlFor="problem">
           {problem}
-          <input type="text" id="problem" required></input>
+          <input type="text" id="problem"></input>
         </label>
 
         <input type="submit"></input>

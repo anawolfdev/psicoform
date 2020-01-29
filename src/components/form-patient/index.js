@@ -3,7 +3,7 @@ import RegisterPatient from "../register-patient";
 import Results from "../results";
 
 export default function HandleForm(props) {
-  const [data, setData] = useState({});
+  const [data, setData] = useState(undefined);
 
   const registerData = e => {
     e.stopPropagation();
@@ -22,13 +22,24 @@ export default function HandleForm(props) {
       email,
       problem
     });
+
     return false;
+  };
+
+  const deleteData = () => {
+    setData(undefined);
   };
 
   return (
     <>
-      <RegisterPatient onSubmit={registerData}></RegisterPatient>
-      <Results values={data}></Results>
+      {!data ? (
+        <RegisterPatient onSubmit={registerData}></RegisterPatient>
+      ) : (
+        <>
+          <Results values={data}></Results>
+          <button onClick={deleteData}>Volver</button>
+        </>
+      )}
     </>
   );
 }
