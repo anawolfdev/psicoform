@@ -16,7 +16,7 @@ export default function RegisterPatient({
         <Title></Title>
         <label htmlFor="name">
           {name}
-          <input type="text" name="name" id="name"></input>
+          <input type="text" name="name" id="name" required></input>
         </label>
 
         <label htmlFor="surname">
@@ -31,12 +31,12 @@ export default function RegisterPatient({
 
         <label htmlFor="email">
           {email}
-          <input type="text" id="email"></input>
+          <input type="text" id="email" required></input>
         </label>
 
         <label htmlFor="problem">
           {problem}
-          <input type="text" id="problem"></input>
+          <input type="text" id="problem" required></input>
         </label>
 
         <input type="submit"></input>
